@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
+const cors = require('cors');
 const PORT = 3000;
 const connectDB = require("./config/dbconfig");
 const {
@@ -16,6 +17,7 @@ const {
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 connectDB();
 
