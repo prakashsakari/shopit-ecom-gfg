@@ -4,7 +4,7 @@ const { Schema } = mongoose;
 
 const productSchema = new Schema({
   id: String,
-  imageUrl: {
+  thumbnail: {
     type: String,
     required: true,
   },
@@ -18,6 +18,7 @@ const productSchema = new Schema({
   size: Array,
   color: Array,
   fit: Array,
+  category: String,
   discountedPrice: String,
   originalPrice: String,
   discountPercentage: String,
