@@ -24,7 +24,7 @@ const productSchema = new Schema({
   discountPercentage: String,
   ratings: String,
   isInStock: {
-    type: Boolean,
+    type: Number,
     required: true,
   },
   fastDelivery: Boolean,
