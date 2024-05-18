@@ -22,7 +22,7 @@ const productSchema = new Schema({
   discountedPrice: Number,
   originalPrice: Number,
   discountPercentage: Number,
-  ratings: Number,
+  rating: Number,
   isInStock: {
     type: Number,
     required: true,
