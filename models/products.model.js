@@ -4,6 +4,7 @@ const { Schema } = mongoose;
 
 const productSchema = new Schema({
   id: String,
+  category: String,
   thumbnail: {
     type: String,
     required: true,
